@@ -935,7 +935,11 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HexFiend_2" */;
 			compatibilityVersion = "Xcode 3.0";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* HexFiend_2 */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1259,7 +1263,7 @@
 			};
 			name = Release;
 		};
-		D00C15E80FF09200006D021F /* Debug-NoUnitTests */ = {
+		D00C15E80FF09200006D021F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1277,7 +1281,7 @@
 				PRODUCT_NAME = HexFiendling;
 				VALID_ARCHS = "ppc64 x86_64 i386 ppc ppc7400 ppc970";
 			};
-			name = "Debug-NoUnitTests";
+			name = Debug;
 		};
 		D00C15E90FF09200006D021F /* Debug-UnitTests */ = {
 			isa = XCBuildConfiguration;
@@ -1444,7 +1448,7 @@
 			};
 			name = Release;
 		};
-		D06D60120FA69B27002376EE /* Debug-NoUnitTests */ = {
+		D06D60120FA69B27002376EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1464,7 +1468,7 @@
 				PREBINDING = NO;
 				PRODUCT_NAME = Test_BTree;
 			};
-			name = "Debug-NoUnitTests";
+			name = Debug;
 		};
 		D06D60130FA69B27002376EE /* Debug-UnitTests */ = {
 			isa = XCBuildConfiguration;
@@ -1801,9 +1805,11 @@
 			};
 			name = "Debug-UnitTests-64";
 		};
-		D0A6CA030DCC6B8B0077175C /* Debug-NoUnitTests */ = {
+		D0A6CA030DCC6B8B0077175C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				GCC_ALTIVEC_EXTENSIONS = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1813,12 +1819,11 @@
 				"MACOSX_DEPLOYMENT_TARGET[arch=ppc64]" = 10.5;
 				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.5;
 				PREBINDING = NO;
-				RUN_CLANG_STATIC_ANALYZER = YES;
 				"SDKROOT[arch=ppc64]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
-			name = "Debug-NoUnitTests";
+			name = Debug;
 		};
-		D0A6CA040DCC6B8B0077175C /* Debug-NoUnitTests */ = {
+		D0A6CA040DCC6B8B0077175C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -1857,9 +1862,9 @@
 				);
 				ZERO_LINK = YES;
 			};
-			name = "Debug-NoUnitTests";
+			name = Debug;
 		};
-		D0A6CA050DCC6B8B0077175C /* Debug-NoUnitTests */ = {
+		D0A6CA050DCC6B8B0077175C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -1885,9 +1890,9 @@
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = YES;
 			};
-			name = "Debug-NoUnitTests";
+			name = Debug;
 		};
-		D0A6CA060DCC6B8B0077175C /* Debug-NoUnitTests */ = {
+		D0A6CA060DCC6B8B0077175C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -1909,7 +1914,7 @@
 				WRAPPER_EXTENSION = ibplugin;
 				ZERO_LINK = YES;
 			};
-			name = "Debug-NoUnitTests";
+			name = Debug;
 		};
 		D0CD52040DA2BA4B006E8D1B /* Debug-UnitTests */ = {
 			isa = XCBuildConfiguration;
@@ -1924,7 +1929,6 @@
 				"MACOSX_DEPLOYMENT_TARGET[arch=ppc64]" = 10.5;
 				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.5;
 				PREBINDING = NO;
-				RUN_CLANG_STATIC_ANALYZER = YES;
 				"SDKROOT[arch=ppc64]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
 			name = "Debug-UnitTests";
@@ -2035,7 +2039,6 @@
 				"MACOSX_DEPLOYMENT_TARGET[arch=ppc64]" = 10.5;
 				"MACOSX_DEPLOYMENT_TARGET[arch=x86_64]" = 10.5;
 				PREBINDING = NO;
-				RUN_CLANG_STATIC_ANALYZER = YES;
 				"SDKROOT[arch=ppc64]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
 			};
 			name = "Debug-UnitTests-Optimized";
@@ -2133,12 +2136,12 @@
 			};
 			name = "Debug-UnitTests-Optimized";
 		};
-		D0F6FE0B0FFF679300C609F0 /* Debug-NoUnitTests */ = {
+		D0F6FE0B0FFF679300C609F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "Documentation Generation";
 			};
-			name = "Debug-NoUnitTests";
+			name = Debug;
 		};
 		D0F6FE0C0FFF679300C609F0 /* Debug-UnitTests */ = {
 			isa = XCBuildConfiguration;
@@ -2185,7 +2188,7 @@
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "HexFiend_2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0A6CA050DCC6B8B0077175C /* Debug-NoUnitTests */,
+				D0A6CA050DCC6B8B0077175C /* Debug */,
 				D0CD52060DA2BA4B006E8D1B /* Debug-UnitTests */,
 				D0D317F40F0F322A008AD92F /* Debug-UnitTests-Optimized */,
 				D08492720DBB70D200C7195C /* Debug-UnitTests-64 */,
@@ -2193,12 +2196,12 @@
 				D083F7370DBCBD5F00C2B632 /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Debug-NoUnitTests";
+			defaultConfigurationName = Debug;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HexFiend_2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0A6CA030DCC6B8B0077175C /* Debug-NoUnitTests */,
+				D0A6CA030DCC6B8B0077175C /* Debug */,
 				D0CD52040DA2BA4B006E8D1B /* Debug-UnitTests */,
 				D0D317F20F0F322A008AD92F /* Debug-UnitTests-Optimized */,
 				D08492700DBB70D200C7195C /* Debug-UnitTests-64 */,
@@ -2206,12 +2209,12 @@
 				D083F7350DBCBD5F00C2B632 /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Debug-NoUnitTests";
+			defaultConfigurationName = Debug;
 		};
 		D00C15EE0FF09200006D021F /* Build configuration list for PBXNativeTarget "HexFiendling" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D00C15E80FF09200006D021F /* Debug-NoUnitTests */,
+				D00C15E80FF09200006D021F /* Debug */,
 				D00C15E90FF09200006D021F /* Debug-UnitTests */,
 				D00C15EA0FF09200006D021F /* Debug-UnitTests-Optimized */,
 				D00C15EB0FF09200006D021F /* Debug-UnitTests-64 */,
@@ -2219,12 +2222,12 @@
 				D00C15ED0FF09200006D021F /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Debug-NoUnitTests";
+			defaultConfigurationName = Debug;
 		};
 		D019309E0D5AE3B50019B3F7 /* Build configuration list for PBXNativeTarget "HexFiend_IBPlugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0A6CA060DCC6B8B0077175C /* Debug-NoUnitTests */,
+				D0A6CA060DCC6B8B0077175C /* Debug */,
 				D0CD52070DA2BA4B006E8D1B /* Debug-UnitTests */,
 				D0D317F50F0F322A008AD92F /* Debug-UnitTests-Optimized */,
 				D08492730DBB70D200C7195C /* Debug-UnitTests-64 */,
@@ -2232,12 +2235,12 @@
 				D083F7380DBCBD5F00C2B632 /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Debug-NoUnitTests";
+			defaultConfigurationName = Debug;
 		};
 		D01E7BBC0CDC530C00943F9E /* Build configuration list for PBXNativeTarget "HexFiend_Framework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0A6CA040DCC6B8B0077175C /* Debug-NoUnitTests */,
+				D0A6CA040DCC6B8B0077175C /* Debug */,
 				D0CD52050DA2BA4B006E8D1B /* Debug-UnitTests */,
 				D0D317F30F0F322A008AD92F /* Debug-UnitTests-Optimized */,
 				D08492710DBB70D200C7195C /* Debug-UnitTests-64 */,
@@ -2245,12 +2248,12 @@
 				D083F7360DBCBD5F00C2B632 /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Debug-NoUnitTests";
+			defaultConfigurationName = Debug;
 		};
 		D06D601F0FA69B69002376EE /* Build configuration list for PBXNativeTarget "Test_BTree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D06D60120FA69B27002376EE /* Debug-NoUnitTests */,
+				D06D60120FA69B27002376EE /* Debug */,
 				D06D60130FA69B27002376EE /* Debug-UnitTests */,
 				D06D60140FA69B27002376EE /* Debug-UnitTests-Optimized */,
 				D06D60150FA69B27002376EE /* Debug-UnitTests-64 */,
@@ -2258,12 +2261,12 @@
 				D06D60170FA69B27002376EE /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Debug-NoUnitTests";
+			defaultConfigurationName = Debug;
 		};
 		D0F6FE180FFF67AC00C609F0 /* Build configuration list for PBXAggregateTarget "Documentation Generation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0F6FE0B0FFF679300C609F0 /* Debug-NoUnitTests */,
+				D0F6FE0B0FFF679300C609F0 /* Debug */,
 				D0F6FE0C0FFF679300C609F0 /* Debug-UnitTests */,
 				D0F6FE0D0FFF679300C609F0 /* Debug-UnitTests-Optimized */,
 				D0F6FE0E0FFF679300C609F0 /* Debug-UnitTests-64 */,
@@ -2271,7 +2274,7 @@
 				D0F6FE100FFF679300C609F0 /* Release-GC */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Debug-NoUnitTests";
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
